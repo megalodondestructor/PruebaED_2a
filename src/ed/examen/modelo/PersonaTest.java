@@ -14,7 +14,7 @@ class PersonaTest {
 
 	@Test
 	void testPersonaStringStringString() {
-		fail("Not yet implemented");
+		assertEquals("Oscar", oscar.getNombre());
 	}
 
 	@Test
