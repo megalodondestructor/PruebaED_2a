@@ -70,9 +70,11 @@ public class Persona{
 		return apellido1;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * @param apellido1 introduce el nuevo apellido de la persona
+	 * este metodo permite cambiar el apellido de una persona
+	 */
 	public void setApellido1(String apellido1) {
 		this.apellido1 = apellido1;
 	}
