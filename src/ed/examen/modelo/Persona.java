@@ -45,9 +45,10 @@ public class Persona{
 		}
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * @return este mertodo devuelve el nombre
+	 */
 	public String getNombre() {
 		return nombre;
 	}
