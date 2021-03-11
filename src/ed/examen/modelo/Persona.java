@@ -21,9 +21,7 @@ public class Persona{
 		this.apellido1 = apellido1;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
 	/**
 	 * @return Este metodo devuelve el dni de una persona
 	 */
@@ -32,9 +30,12 @@ public class Persona{
 	}
 	
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * @param dni, introduce el dni de la persona como parametro
+	 * @throws Exception salta una excepcion si el ultimo caracter del dni no es una letra.
+	 * este metodo permite establecer el dni de una persona
+	 */
 	public void setDni(String dni) throws Exception {
 		//comprobacion de si el ultimo caracter es una letra
 		if(Character.isLetter(dni.charAt(dni.length()))) {
