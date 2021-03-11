@@ -3,13 +3,20 @@ package ed.examen.modelo;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author oscar
+ * version 1.1
+ */
 public class Curso {
 	
 	private List<Persona> listaAlumnos;
 
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * @param dni, introdce el dni String de la persona a eliminar
+	 * @throws Exception cuando el dni no tiene la longitud adecuada
+	 * este metodo permite eliminar alumnos introduciendo el dni de la persona
+	 */
 	public void eliminarAlumno(String dni) throws Exception {
 		if(dni.length()==9) {//comprobar la longitud del dni
 			listaAlumnos.remove(new Persona(dni, "", "")); //solo hace falta el dni

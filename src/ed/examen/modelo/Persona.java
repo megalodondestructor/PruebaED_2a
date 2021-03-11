@@ -1,5 +1,9 @@
 package ed.examen.modelo;
 
+/**
+ * @author oscar
+ * version 1.1
+ */
 public class Persona{
 	
 	private String dni;
