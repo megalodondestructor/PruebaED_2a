@@ -25,16 +25,19 @@ public class Curso {
 		}
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * @param p introduce la persona a agnadir
+	 */
 	public void aniadirAlumno(Persona p) {
 		listaAlumnos.add(p);
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * @param dni dni de la persona que queremos saber si esta registrada
+	 * @return devuelve true si el alumno esta registrado, false si no es el caso
+	 */
 	public Boolean estaRegistrado(String dni) {
 		int i =0;
 		Boolean encontrado=false;
@@ -47,16 +50,16 @@ public class Curso {
 		return encontrado;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+
 	public Curso() {
 		listaAlumnos= new ArrayList<Persona>();
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * @return devuelve la lista de todos los alumnos 
+	 */
 	public Integer numeroAlumnos() {return listaAlumnos.size();}
 	
 	
