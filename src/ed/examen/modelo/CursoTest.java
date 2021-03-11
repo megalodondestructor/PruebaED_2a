@@ -47,7 +47,9 @@ class CursoTest {
 
 	@Test
 	void testCurso() {
-		fail("Not yet implemented");
+		Curso curso = new Curso();
+		assertNotNull(curso);
+
 	}
 
 	@Test
