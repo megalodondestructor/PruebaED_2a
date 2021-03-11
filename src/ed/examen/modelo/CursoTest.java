@@ -34,8 +34,15 @@ class CursoTest {
 	}
 
 	@Test
-	void testEstaRegistrado() {
-		fail("Not yet implemented");
+	public void estaRegistradoTest() {
+		Persona oscar = new Persona("11111111L", "Oscar", "Garcia");
+		Persona ramon = new Persona("11111551L", "ramon", "galarza");
+
+		micurso.aniadirAlumno(oscar);
+
+		assertTrue(micurso.estaRegistrado(oscar.getDni()));
+		assertFalse(micurso.estaRegistrado(ramon.getDni()));
+
 	}
 
 	@Test
